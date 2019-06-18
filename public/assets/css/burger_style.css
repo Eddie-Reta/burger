@@ -1,0 +1,12 @@
+/* Css style */
+body {
+    background-color: yellow;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+div {
+   text-align: center;
+}
