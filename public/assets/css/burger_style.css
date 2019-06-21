@@ -7,6 +7,57 @@ img {
     margin-left: auto;
     margin-right:auto;
 }
-div {
+#all {
    text-align: center;
+   clear: both;
+}
+/* #wrap {
+  
+}
+#list {
+   padding: 1px;
+    background-color: aquamarine;
+    margin: 0 0 5px 30%;
+  width: 250px;
+  float: left;
+}
+
+#buttons {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60%;
+   
+}
+.eachB {
+    color: blueviolet;
+    margin-top: 50%;
+} */
+.wrapper {
+    width: 100%;
+    margin: auto;
+    flex-wrap: nowrap;
+}
+/* Css style sheet */
+.flex-container {
+    display: flex;
+}
+.box-1 {
+    width: max-content;
+    margin: auto 0 auto auto;
+}
+.box-2 {
+  
+        margin-left: 15px;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+.eachB {
+    flex-direction: column;
+}
+.p {
+    background-color: aquamarine;
+    padding: 3px;
 }
