@@ -39,11 +39,18 @@ var orm = {
         } );
  },
  //updates data in the table
-    updateOne: function(updateId, cb) {
-        var upId = "UPDATE " + eat + " SET ? WHERE ?";
-       
-        connection.query(upId,[devoured, updateId], function(err,results) {
-         
+    updateOne: function(a, b, cb) {
+        var bigA = "devoured = " + a
+      var c = "id = " + b
+        var upId = "UPDATE " + eat;
+            upId += " SET ";
+            upId += bigA;
+            upId += " WHERE ";
+            upId += c;
+
+       console.log("this is " + bigA +"   " + b)
+        connection.query(upId, function(err,results) {
+         console.log(upId)
             if (err) {
                
                 throw err;

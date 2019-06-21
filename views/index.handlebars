@@ -7,10 +7,12 @@
         <p class="p">{{id}}. {{burger_name}}</p>   {{/each}}  </div>
         <div class="box-2">
             {{!-- box 2 has the devour button  --}}
-              {{#each burgers}}
-         <button class="eachB" data-id="{{id}}" data-true="{{devoured}}">
-        {{#if devoured}} {{else}} Devour {{/if}}
-    </button>{{/each}}
+              {{#each burgers}}     
+
+ <button class="eachB" data-id="{{id}}" >
+     {{#if devoured}}{{else}}devour{{/if}}
+     </button>
+    {{/each}}
     </div>
 
 </div>

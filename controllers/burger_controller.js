@@ -24,11 +24,11 @@ router.post("/api/burgers", function(req,res) {
 });  
 
 router.put("/api/burgers/:id", function(req,res) {
-     
-var idSt =  req.params.id
-var id = parseInt(idSt)
-console.log(id);
-    burgers.updateOne(req.params.devoured, function(result){
+    var id =  req.params.id
+var devour =  req.body.devoured;
+var newId = parseInt(id)
+console.log(newId + devour);
+    burgers.updateOne(devour, id, function(result){
         if(result.changedRows === 0 ) {
             return res.status(404).end();
        

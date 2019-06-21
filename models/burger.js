@@ -11,12 +11,12 @@ var burgers = {
             cb(res)
         })
      },
-     updateOne: function(a, cb) {
-         orm.updateOne(a, function(results){
+     updateOne: function(a, b, cb) {
+         orm.updateOne(a, b, function(results){
             cb(results)
              console.log("burger.js" + results)
          });
-     
+    
      }
 }
 
